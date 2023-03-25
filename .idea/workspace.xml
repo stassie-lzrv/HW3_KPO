@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="775b155c-b3a1-464e-a182-f32b6d9d1147" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/AgentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/AgentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/behaviour/ReceiveMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/behaviour/ReceiveMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/config/AgentJade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/config/AgentJade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/setup_annotation/SetAnnotationNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/setup_annotation/SetAnnotationNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/utility/ACLMessageUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/utility/ACLMessageUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +43,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.50139666"
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.postfix.templates"
   }
 }]]></component>
   <component name="RecentsManager">
