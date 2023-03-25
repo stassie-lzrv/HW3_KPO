@@ -5,36 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="775b155c-b3a1-464e-a182-f32b6d9d1147" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cook/Cook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cook/CookList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cooking/CookingLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cooking/CookingOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cooking/CookingOperationList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equipment/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equipment/EquipmentList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equirment_type/EquipmentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equirment_type/EquipmentTypeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/kitchen/KitchenOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/kitchen/KitchenOperationList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/menu/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/menu/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/operation/OperationList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/operation/OperationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/OrderDish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/OrderInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/OrderList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/product/ProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/stock/ProductAtStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/stock/ProductAtStockList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/DishCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/DishCardList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/OperationProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Cooker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/HelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Stock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/behaviour/SendMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/utility/JsonRecord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/AgentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +56,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
