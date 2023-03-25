@@ -9,26 +9,34 @@ import restaurant.behaviour.ReceiveMessage;
 import restaurant.config.AgentJade;
 import restaurant.setup_annotation.SetAnnotationNumber;
 
-@AgentJade(number = 5)
+import java.util.logging.Logger;
 
+@AgentJade(number = 5)
 public class Equipment extends Agent implements SetAnnotationNumber {
+
+    private final Logger logger = Logger.getLogger(Equipment.class.getName());
 
     @Override
     protected void setup() {
-        System.out.println("Hello from " + getAID().getName());
+        logger.info("Hello from " + getAID().getName());
 
-        DFAgentDescription dfAgentDescription = new DFAgentDescription();
-        dfAgentDescription.setName(getAID());
-        ServiceDescription serviceDescription = new ServiceDescription();
-        serviceDescription.setType(TypesOfAgents.equipment);
-        serviceDescription.setName("JADE-test");
-        dfAgentDescription.addServices(serviceDescription);
+        // Register agent services
+        DFAgentDescription dfd = new DFAgentDescription();
+        dfd.setName(getAID());
+
+        ServiceDescription sd = new ServiceDescription();
+        sd.setType(TypesOfAgents.equipment);
+        sd.setName("JADE-test");
+        dfd.addServices(sd);
+
         try {
-            DFService.register(this, dfAgentDescription);
-        } catch (FIPAException fipaException) {
-            fipaException.printStackTrace();
+            DFService.register(this, dfd);
+        } catch (FIPAException e) {
+            logger.severe("Failed to register agent services: " + e.getMessage());
+            doDelete();
         }
 
+        // Add agent behaviours
         addBehaviour(new ReceiveMessage());
     }
 
@@ -36,10 +44,10 @@ public class Equipment extends Agent implements SetAnnotationNumber {
     protected void takeDown() {
         try {
             DFService.deregister(this);
-        } catch (FIPAException fipaException) {
-            fipaException.printStackTrace();
+        } catch (FIPAException e) {
+            logger.warning("Failed to deregister agent services: " + e.getMessage());
         }
-        System.out.println("testAgent " + getAID().getName() + " terminating");
+        logger.info("Equipment agent " + getAID().getName() + " terminated.");
     }
 
     @Override

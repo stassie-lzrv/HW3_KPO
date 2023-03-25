@@ -9,12 +9,16 @@ import restaurant.behaviour.ReceiveMessage;
 import restaurant.config.AgentJade;
 import restaurant.setup_annotation.SetAnnotationNumber;
 
+import java.util.logging.Logger;
+
 @AgentJade(number = 5)
 public class Order extends Agent implements SetAnnotationNumber {
 
+    private static final Logger logger = Logger.getLogger(Order.class.getName());
+
     @Override
     protected void setup() {
-        System.out.println("Hello from " + getAID().getName());
+        logger.info("Hello from " + getAID().getName());
 
         DFAgentDescription dfAgentDescription = new DFAgentDescription();
         dfAgentDescription.setName(getAID());
@@ -25,9 +29,9 @@ public class Order extends Agent implements SetAnnotationNumber {
         try {
             DFService.register(this, dfAgentDescription);
         } catch (FIPAException fipaException) {
+            logger.severe("Error registering service: " + fipaException.getMessage());
             fipaException.printStackTrace();
         }
-
 
         addBehaviour(new ReceiveMessage());
     }
@@ -37,9 +41,10 @@ public class Order extends Agent implements SetAnnotationNumber {
         try {
             DFService.deregister(this);
         } catch (FIPAException fipaException) {
+            logger.severe("Error deregistering service: " + fipaException.getMessage());
             fipaException.printStackTrace();
         }
-        System.out.println("testAgent " + getAID().getName() + " terminating");
+        logger.info("Order agent " + getAID().getName() + " terminating");
     }
 
     @Override

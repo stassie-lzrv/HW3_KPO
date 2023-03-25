@@ -1,7 +1,7 @@
 package restaurant.agents;
 
-import jade.core.AID;
 import jade.core.Agent;
+import jade.core.AID;
 import jade.core.behaviours.TickerBehaviour;
 import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
@@ -11,9 +11,13 @@ import restaurant.behaviour.SendMessage;
 import restaurant.config.AgentJade;
 import restaurant.model.Person;
 
+import javax.sql.rowset.spi.SyncFactoryException;
+import java.util.logging.Level;
+
+import static javax.sql.rowset.spi.SyncFactory.getLogger;
+
 @AgentJade("Hello")
 public class HelloWorld extends Agent {
-
     private AID[] testAgents;
 
     @Override
@@ -23,12 +27,12 @@ public class HelloWorld extends Agent {
         System.out.println("My GUID is " + getAID().getName());
         System.out.println("My addresses are " + String.join(",", getAID().getAddressesArray()));
 
-
         findTestAgents();
     }
 
     private void findTestAgents() {
         addBehaviour(new TickerBehaviour(this, 10000) {
+            @Override
             protected void onTick() {
                 DFAgentDescription dfAgentDescription = new DFAgentDescription();
                 ServiceDescription serviceDescription = new ServiceDescription();
@@ -37,16 +41,20 @@ public class HelloWorld extends Agent {
                 try {
                     DFAgentDescription[] result = DFService.search(myAgent, dfAgentDescription);
                     testAgents = new AID[result.length];
-                    for (int i = 0; i < result.length; ++i) {
+                    for (int i = 0; i < result.length; i++) {
                         testAgents[i] = result[i].getName();
                     }
-                } catch (FIPAException fipaException) {
-                    fipaException.printStackTrace();
+                } catch (FIPAException e) {
+                    try {
+                        getLogger().log(Level.SEVERE, "An error occurred while searching for agents: " + e.getMessage());
+                    } catch (SyncFactoryException ex) {
+                        throw new RuntimeException(ex);
+                    }
                 }
                 myAgent.addBehaviour(new SendMessage(testAgents,
                         new Person(
-                                "Anton",
-                                "Kalinin"
+                                "Name",
+                                "Lastname"
                         )));
             }
         });

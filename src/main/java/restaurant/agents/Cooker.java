@@ -5,43 +5,56 @@ import jade.domain.DFService;
 import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.domain.FIPAException;
+import lombok.SneakyThrows;
 import restaurant.behaviour.ReceiveMessage;
-import restaurant.setup_annotation.SetAnnotationNumber;
 import restaurant.config.AgentJade;
 
+import static javax.sql.rowset.spi.SyncFactory.getLogger;
 
 @AgentJade(number = 5)
-public class Cooker extends Agent implements SetAnnotationNumber {
+public class Cooker extends Agent {
 
+    @SneakyThrows
     @Override
     protected void setup() {
-        System.out.println("Hello from " + getAID().getName());
-        DFAgentDescription dfAgentDescription = new DFAgentDescription();
-        dfAgentDescription.setName(getAID());
+        // Описание агента
+        DFAgentDescription agentDescription = new DFAgentDescription();
+        agentDescription.setName(getAID());
+
+        // Описание сервиса, предоставляемого агентом
         ServiceDescription serviceDescription = new ServiceDescription();
-        serviceDescription.setType(TypesOfAgents.cooker);
+        serviceDescription.setType("restaurant.agents.TypesOfAgents.cooker");
         serviceDescription.setName("JADE-test");
-        dfAgentDescription.addServices(serviceDescription);
+
+        // Добавление сервиса в описание агента
+        agentDescription.addServices(serviceDescription);
+
         try {
-            DFService.register(this, dfAgentDescription);
-        } catch (FIPAException fipaException) {
-            fipaException.printStackTrace();
+            // Регистрация агента в сервисной желтой странице
+            DFService.register(this, agentDescription);
+        } catch (FIPAException e) {
+            // Обработка исключения
+            getLogger().severe("Failed to register agent " + getAID().getName() + " to DFService: " + e.getMessage());
+            doDelete();
+            return;
         }
+
+        // Добавление поведения для обработки сообщений
         addBehaviour(new ReceiveMessage());
     }
 
+    @SneakyThrows
     @Override
     protected void takeDown() {
         try {
+            // Удаление агента
             DFService.deregister(this);
-        } catch (FIPAException fipaException) {
-            fipaException.printStackTrace();
+        } catch (FIPAException e) {
+            // Обработка исключения
+            getLogger().severe("Failed to deregister agent " + getAID().getName() + " from DFService: " + e.getMessage());
         }
-        System.out.println("testAgent " + getAID().getName() + " terminating");
-    }
 
-    @Override
-    public void setNumber(int number) {
-        SetAnnotationNumber.super.setNumber(number);
+        // Логирование завершения работы агента
+        getLogger().info("Cooker agent " + getAID().getName() + " terminated.");
     }
 }

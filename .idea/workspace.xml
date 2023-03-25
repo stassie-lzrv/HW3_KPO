@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775b155c-b3a1-464e-a182-f32b6d9d1147" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Cooker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/behaviour/SendMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/utility/JsonRecord.java" afterDir="false" />
+    <list default="true" id="775b155c-b3a1-464e-a182-f32b6d9d1147" name="Changes" comment="agents added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MTPs-Main-Container.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MTPs-Main-Container.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/AgentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/Cooker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Cooker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/Equipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Equipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/HelloWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restaurant/agents/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restaurant/agents/Stock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,7 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -81,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679735673230</updated>
     </task>
+    <task id="LOCAL-00001" summary="agents added">
+      <created>1679760300219</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679760300219</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +95,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agents added" />
+    <option name="LAST_COMMIT_MESSAGE" value="agents added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
