@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775b155c-b3a1-464e-a182-f32b6d9d1147" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cook/Cook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cook/CookList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cooking/CookingLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cooking/CookingOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/cooking/CookingOperationList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equipment/Equipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equipment/EquipmentList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equirment_type/EquipmentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/equirment_type/EquipmentTypeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/kitchen/KitchenOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/kitchen/KitchenOperationList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/menu/Dish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/menu/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/operation/OperationList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/operation/OperationLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/OrderDish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/OrderInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/order/OrderList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/product/ProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/stock/ProductAtStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/stock/ProductAtStockList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/DishCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/DishCardList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/restaurant/model/tech_card/OperationProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
-    </list>
+    <list default="true" id="775b155c-b3a1-464e-a182-f32b6d9d1147" name="Changes" comment="models of main processes and items added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679735673230</updated>
     </task>
+    <task id="LOCAL-00001" summary="models of main processes and items added">
+      <created>1679754864677</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679754864677</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +84,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="models of main processes and items added" />
+    <option name="LAST_COMMIT_MESSAGE" value="models of main processes and items added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
